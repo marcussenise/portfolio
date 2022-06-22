@@ -1,0 +1,79 @@
+- Web:
+Pokedex
+Dev-junior-game
+space-shooter
+genius-game
+game-resgate
+jogo-da-velha
+bikcraft
+projeto-agro
+site esg
+
+- Mobile:
+Rive Animation
+eleventec
+vakinha-burguer
+jogo memória flutter
+portfolio flutter
+imc react native
+calculator react-native
+
+
+
+- Wireframe:
+wireframe habble con ella
+wireframe bikcraft nova
+
+
+
+
+
+
+
+
+
+
+
+
+
+se inspirar nos projetos, abas e dark mode: 
+https://portifolio-walter-lima-viana.vercel.app/
+
+
+body:
+	barra fixa com ícones de redes sociais, ver: https://gabrielmenezesnog.github.io/?fbclid=IwAR0_QgGD2Sswby3ox87TfvTuq5fUo_AFSSAHZPM2lnE7lROf58rcEnYRIUE
+
+menu: 
+	versão pt/en
+	efeito vidro transparente, ver: https://gabrielmenezesnog.github.io/ e https://rogercosta.dev/ 
+	implementação: https://twitter.com/Steve8708/status/1531101973985890305
+
+header: 
+	https://www.youtube.com/watch?v=CqBEmgkR_fQ
+	efeito de typing
+	botões de contactar e cv
+
+
+
+projetos:
+	slide com 2 projetos cada
+
+contatos
+
+
+--------
+
+efeito nome que se mexe com scroll:
+https://codepen.io/ispykenny/pen/BaaYqYZ
+--------
+
+
+definir tipografia
+- textos: Fire Sans
+- 'logo' e títulos: Poiret One
+
+CORES:
+ 	- Fundo azul escuro: #16133E
+	- Letra branca: #FDF4ED
+	- Letra cinza, mais apagada: #8F8F8F
+
