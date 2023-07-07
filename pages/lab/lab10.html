@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width,shrink-to-fit=0,user-scalable=no,minimum-scale=1,maximum-scale=1"
+  />
+  <title>Lab 10</title>
+ 
+  <style>
+        html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    body {
+      width: 100%;
+      height: 100%; 
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin: 0;
+    }
+    canvas {
+      margin: auto;
+      display: block;
+      box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+   <link rel="stylesheet" href="../../style.css" />
+
+  <body>
+    <div class="menu-superior-lab">
+      <div class="menu-navegacao-lab">
+        <a href="./lab09.html"><button>← Voltar</button></a>
+        <a href="../../lab.html"><button>Lab 🧪</button></a>
+      </div>
+      <a><button class="botaoAtualizar">Atualizar 🔄️</button></a>
+    </div>
+    <canvas width="600" height="600">
+        
+    </canvas>
+    <script>
+      let canvas = document.querySelector("canvas");
+      let context = canvas.getContext("2d");
+
+      context.lineWidth = 4;
+      context.beginPath();
+      context.rect(100, 100, 400, 400);
+      // context.stroke();
+
+      context.beginPath();
+      context.arc(300, 300, 100, 0, Math.PI * 2);
+      // context.stroke();
+
+      const width = 60;
+      const height = 60;
+      const gap = 20;
+      let x, y;
+
+      for (let i = 0; i < 5; i++) {
+        if (Math.random() > 0.5) {
+          context.beginPath();
+          context.rect(x + 8, y + 8, width - 16, height - 16);
+          context.stroke();
+          if (Math.random() > 0.6) {
+            context.strokeStyle = "blue";
+          } else {
+            context.strokeStyle = "yellow";
+          }
+        }
+        for (let j = 0; j < 5; j++) {
+          x = 100 + (width + gap) * i;
+          y = 100 + (height + gap) * j;
+
+          context.beginPath();
+          context.rect(x, y, width, height);
+          context.stroke();
+        }
+      }
+    </script>
+    <script src="../../scripts/js.js"></script>
+  </body>
+</html>

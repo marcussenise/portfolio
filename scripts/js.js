@@ -18,8 +18,11 @@ const activateTab = tabnum => {
     localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
     
   }
-  
-  activateTab('1');
+
+  if(tabContents.length != 0){
+    activateTab('1');
+  }
+
 // Event Listeners
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -27,20 +30,30 @@ tabs.forEach(tab => {
     })
 })
 
+const classSwiper = document.querySelector('.mySwiper');
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    centeredSlides: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    effect: 'coverflow',
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 15,
+if(classSwiper != null){
+  var swiper = new Swiper(classSwiper, {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-    },
-  });
+      effect: 'coverflow',
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+      },
+    });
+}
+
+
+  //Botão atualizar
+  const botaoAtualizar = document.querySelector('.botaoAtualizar');
+  botaoAtualizar.addEventListener('click', function(){
+    location.reload()
+  })

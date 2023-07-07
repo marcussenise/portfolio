@@ -56,6 +56,11 @@ img{
     border-radius: 40px;
 }
 
+a{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */  
+}
+
 /* HEADER/MENU */
 
 .efeitoBlur {
@@ -169,7 +174,7 @@ svg:hover{
     display: block;
 }
 
-.introducao div button{
+button{
     margin-top: 15px;
     padding: 5px 10px;
     cursor: pointer;
@@ -180,7 +185,7 @@ svg:hover{
     font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
 }
 
-.introducao div button:hover{
+button:hover{
     transition: .5s;
     background-color: #16F555;
     color: black;
@@ -467,6 +472,27 @@ object-fit: contain;
     margin-left: 20px;
     color: #8F8F8F;
 }
+
+
+/* LAB */
+
+.menu-superior-lab{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-navegacao-lab{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 15px;
+}
+
+.menu-navegacao-lab button{
+    margin-right: 15px;
+}
+
+/* FOOTER */
 
 footer{
     background-color: #100D35;
