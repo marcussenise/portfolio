@@ -32,16 +32,17 @@ tabs.forEach(tab => {
 
 const classSwiper = document.querySelector('.mySwiper');
 
-if(classSwiper != null){
-  var swiper = new Swiper(classSwiper, {
+
+  var swiper = new Swiper('.mySwiper', {
+      // effect: 'coverflow',
       slidesPerView: 2,
       spaceBetween: 30,
       centeredSlides: true,
+      grabCursor: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-      effect: 'coverflow',
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -49,7 +50,7 @@ if(classSwiper != null){
         },
       },
     });
-}
+
 
 
   //Botão atualizar

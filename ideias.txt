@@ -1,5 +1,4 @@
 - Web:
-Pokedex
 Dev-junior-game
 space-shooter
 genius-game
