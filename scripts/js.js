@@ -55,6 +55,8 @@ const classSwiper = document.querySelector('.mySwiper');
 
   //Botão atualizar
   const botaoAtualizar = document.querySelector('.botaoAtualizar');
-  botaoAtualizar.addEventListener('click', function(){
-    location.reload()
-  })
+  if(botaoAtualizar != null){
+    botaoAtualizar.addEventListener('click', function(){
+      location.reload()
+    })
+  }
